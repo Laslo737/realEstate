@@ -36,7 +36,7 @@ export async function onRequestPost(context) {
     return new Response(data, {
       status: 302,
       headers: {
-        'Location': `./thanks.html?name=${output.name}&tel=${getTelephone}`,
+        'Location': `./thanks.html${output.name ? `?name=${output.name}` : ''}&tel=${getTelephone}`,
         'Content-Type': 'application/json;charset=utf-8',
       },
     });
