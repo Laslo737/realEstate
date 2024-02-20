@@ -22,7 +22,26 @@
   </noscript>
   <link rel="stylesheet" href="css/highlight.min.css" type="text/css" media="all" onerror="this.loaderr='y';" />
 
+  <script
+    type="text/javascript">function t_onReady(func) {
+        if (document.readyState != 'loading') {
+          func();
+        } else {
+          document.addEventListener('DOMContentLoaded', func);
+        }
+      }
+      function t_onFuncLoad(funcName, okFunc, time) {
+        if (typeof window[funcName] === 'function') {
+          okFunc();
+        } else {
+          setTimeout(function () {
+            t_onFuncLoad(funcName, okFunc, time);
+          }, (time || 100));
+        }
+      } function t396_initialScale(t) { t = document.getElementById("rec" + t); if (t) { t = t.querySelector(".t396__artboard"); if (t) { var e, r = document.documentElement.clientWidth, a = []; if (l = t.getAttribute("data-artboard-screens")) for (var l = l.split(","), i = 0; i < l.length; i++)a[i] = parseInt(l[i], 10); else a = [320, 480, 640, 960, 1200]; for (i = 0; i < a.length; i++) { var o = a[i]; o <= r && (e = o) } var n = "edit" === window.allrecords.getAttribute("data-tilda-mode"), d = "center" === t396_getFieldValue(t, "valign", e, a), u = "grid" === t396_getFieldValue(t, "upscale", e, a), c = t396_getFieldValue(t, "height_vh", e, a), g = t396_getFieldValue(t, "height", e, a), s = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/"); if (!n && d && !u && !c && g && !s) { for (var _ = parseFloat((r / e).toFixed(3)), f = [t, t.querySelector(".t396__carrier"), t.querySelector(".t396__filter")], i = 0; i < f.length; i++)f[i].style.height = Math.floor(parseInt(g, 10) * _) + "px"; t396_scaleInitial__getElementsToScale(t).forEach(function (t) { t.style.zoom = _ }) } } } } function t396_scaleInitial__getElementsToScale(t) { t = Array.prototype.slice.call(t.querySelectorAll(".t396__elem")); if (!t.length) return []; var e = []; return (t = t.filter(function (t) { t = t.closest('.t396__group[data-group-type-value="physical"]'); return !t || (-1 === e.indexOf(t) && e.push(t), !1) })).concat(e) } function t396_getFieldValue(t, e, r, a) { var l = a[a.length - 1], i = r === l ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + r); if (!i) for (var o = 0; o < a.length; o++) { var n = a[o]; if (!(n <= r) && (i = n === l ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + n))) break } return i }</script>
 
+  <script src="js/tilda-t862-popupstepform-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+  <script src="js/tilda-popup-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
 
 
 
@@ -968,7 +987,7 @@
             data-field-top-res-320-value="502" data-field-left-res-320-value="18" data-field-top-res-480-value="378"
             data-field-left-res-480-value="99" data-field-top-res-640-value="365" data-field-left-res-640-value="179"
             data-field-top-res-960-value="405" data-field-left-res-960-value="10"><a class='tn-atom'
-              href="form.html#rec682956190">Получить подборку</a></div>
+              href="#rec682956190">Получить подборку</a></div>
           <div class='t396__elem tn-elem tn-elem__6829561811629447249421' data-elem-id='1629447249421'
             data-elem-type='text' data-field-top-value="563" data-field-left-value="80" data-field-width-value="369"
             data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid"
@@ -1256,232 +1275,7 @@
       </div>
 
     </div>
-    <div id="rec682956188" class="r t-rec" data-animationappear="off" data-record-type="722">
-      <!-- t722 --><!-- cover -->
-      <div class="t-cover" id="recorddiv682956188" bgimgfield="img"
-        style="height:650px; background-image:url('images/tild3236-3238-4332-b135-306663646437__-__resize__20x__fon3.jpg');">
-        <div class="t-cover__carrier" id="coverCarry682956188" data-content-cover-id="682956188"
-          data-content-cover-bg="images/tild3236-3238-4332-b135-306663646437__fon3.jpg" data-display-changed="true"
-          data-content-cover-height="650px" data-content-cover-parallax=""
-          style="height:650px;background-attachment:scroll; " itemscope itemtype="http://schema.org/ImageObject">
-          <img src="./images/tild3236-3238-4332-b135-306663646437__fon3.jpg">
-        </div>
-        <div class="t-cover__filter"
-          style="height:650px;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.60));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.60));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.60));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.60));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.60));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#66000000');">
-        </div>
-        <div class="t722">
-          <div class="t-container">
-            <div class="t-width t-width_8 t722__mainblock">
-              <div class="t-cover__wrapper t-valign_middle" style="height:650px; position: relative;z-index: 1;">
-                <div class="t722__mainwrapper" data-hook-content="covercontent">
-                  <div class="t722__content" style="background-color: #ffffff;">
-                    <div class="t722__textwrapper">
-                      <div class="t722__title t-title t-title_xs t-margin_auto" field="title">
-                        <div style="font-size: 36px;" data-customstyle="yes"><span
-                            style="color: rgb(63, 63, 63);">Ведущие банки предоставляют нашим клиентам наилучшие условия
-                            по ипотеке</span></div>
-                      </div>
-                      <div class="t722__descr t-descr t-descr_xl t-margin_auto" field="descr">
-                        <div style="color:#000000;" data-customstyle="yes">Узнайте сколько банков одобрят ипотеку вам
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <a style="color: white;" href="form.html#rec682956190"><button class="t-submit"
-                              style="color:#ffffff;border:3px solid #ffffff;background-color:#24960e;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;"
-                              data-field="buttontitle" data-buttonfieldset="button"
-                              data-btneffects-first="btneffects-flash">Узнать, сколько одобрят </button></a>
-                      <style>
-                        #rec682956188 input::-webkit-input-placeholder {
-                          color: #000000;
-                          opacity: 0.5;
-                        }
-
-                        #rec682956188 input::-moz-placeholder {
-                          color: #000000;
-                          opacity: 0.5;
-                        }
-
-                        #rec682956188 input:-moz-placeholder {
-                          color: #000000;
-                          opacity: 0.5;
-                        }
-
-                        #rec682956188 input:-ms-input-placeholder {
-                          color: #000000;
-                          opacity: 0.5;
-                        }
-
-                        #rec682956188 textarea::-webkit-input-placeholder {
-                          color: #000000;
-                          opacity: 0.5;
-                        }
-
-                        #rec682956188 textarea::-moz-placeholder {
-                          color: #000000;
-                          opacity: 0.5;
-                        }
-
-                        #rec682956188 textarea:-moz-placeholder {
-                          color: #000000;
-                          opacity: 0.5;
-                        }
-
-                        #rec682956188 textarea:-ms-input-placeholder {
-                          color: #000000;
-                          opacity: 0.5;
-                        }
-                      </style>
-                    </div>
-                    <div class="t722__hint t-text t-text_xs t-margin_auto" field="text"><a
-                        target="_blank" href="policy.html">Политика конфиденциальности<br /></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <style>
-        #rec682956188 .t-btn[data-btneffects-first],
-        #rec682956188 .t-btn[data-btneffects-second],
-        #rec682956188 .t-btn[data-btneffects-third],
-        #rec682956188 .t-submit[data-btneffects-first],
-        #rec682956188 .t-submit[data-btneffects-second],
-        #rec682956188 .t-submit[data-btneffects-third] {
-          position: relative;
-          overflow: hidden;
-          isolation: isolate;
-        }
-
-        #rec682956188 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects,
-        #rec682956188 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          -webkit-transform: translateX(-85px);
-          -ms-transform: translateX(-85px);
-          transform: translateX(-85px);
-          -webkit-animation-name: flash;
-          animation-name: flash;
-          -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-          -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-          -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-        }
-
-        #rec682956188 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_md,
-        #rec682956188 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_md {
-          -webkit-animation-name: flash-md;
-          animation-name: flash-md;
-        }
-
-        #rec682956188 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_lg,
-        #rec682956188 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_lg {
-          -webkit-animation-name: flash-lg;
-          animation-name: flash-lg;
-        }
-
-        #rec682956188 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_effects,
-        #rec682956188 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_effects {
-          background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .1)), to(rgba(255, 255, 255, .4)));
-          background: -webkit-linear-gradient(left, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
-          background: -o-linear-gradient(left, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
-          background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
-          width: 45px;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 30px;
-          -webkit-transform: skewX(-45deg);
-          -ms-transform: skewX(-45deg);
-          transform: skewX(-45deg);
-        }
-
-        @-webkit-keyframes flash {
-          20% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-
-          100% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-        }
-
-        @keyframes flash {
-          20% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-
-          100% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-        }
-
-        @-webkit-keyframes flash-md {
-          30% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-
-          100% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-        }
-
-        @keyframes flash-md {
-          30% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-
-          100% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-        }
-
-        @-webkit-keyframes flash-lg {
-          40% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-
-          100% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-        }
-
-        @keyframes flash-lg {
-          40% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-
-          100% {
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-          }
-        }
-      </style>
-
-      <style>
-        #rec682956188 .t722__descr {
-          opacity: 0.5;
-        }
-      </style>
-    </div>
+    
     <div id="rec682956189" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px; "
       data-animationappear="off" data-record-type="502"><!-- t502 -->
       <div class="t502">
@@ -1575,7 +1369,7 @@
         </ul>
         <div class="t-section__container t-container">
           <div class="t-col t-col_12">
-            <div class="t-section__bottomwrapper t-clear t-align_center"><a href="form.html#rec682956190" 
+            <div class="t-section__bottomwrapper t-clear t-align_center"><a href="#rec682956190" 
                 class="t-btn t-btn_md"
                 style="color:#ffffff;background-color:#24960e;border-radius:30px; -moz-border-radius:30px; -webkit-border-radius:30px;"
                 data-buttonfieldset="bbutton">
@@ -1618,14 +1412,103 @@
             <div class="t-width t-width_8 t698__mainblock">
               <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
                 <div class="t698__mainwrapper" data-hook-content="covercontent">
-                  <div class="t698__title t-title t-title_xs" field="title">Получите консультацию о том, как выгодно
-                    купить недвижимость в 2024</div>
+                  <div class="t698__title t-title t-title_xs" field="title">Оставьте заявку и мы ответим на все Ваши вопросы!</div>
                   <div class="t698__descr t-descr t-descr_md" field="descr">Заполните и отправьте поля формы и получите
                     бесплатные услуги экспертов в подборе первичной недвижимости.</div>
                   <div>
-                    <a style="color: white;" href="form.html#rec682956190"><button  class="t-submit"
-                    style="color:#ffffff;background-color:#24960e;border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px;"
-                    data-field="buttontitle" data-buttonfieldset="button">Отправить </button></a>
+                    <form id="form682956190" name='form682956190' role="form" action='/sendmessage' method='POST'
+                      data-formactiontype="2" data-inputbox=".t-input-group"
+                      class="t-form js-form-proccess t-form_inputs-total_4 " data-success-callback="t698_onSuccess">
+                      <input type="hidden" name="formName" id="formName" value="Заполните и отправьте поля формы и получите бесплатные услуги экспертов в подборе первичной недвижимости." />
+                      <input type="hidden" name="sub1" id="sub1" value="" />
+                      <input type="hidden" name="keyword" id="keyword" value="" />
+                      <input type="hidden" name="gclid" id="gclid" value="" />
+                      <div class="js-successbox t-form__successbox t-text t-text_md" aria-live="polite"
+                        style="display:none;"></div>
+                      <div class="t-form__inputsbox t-form__inputsbox_vertical-form t-form__inputsbox_inrow">
+                        <div class="t-input-group t-input-group_nm " data-input-lid="1495646567135"
+                          data-field-type="nm">
+                          <div class="t-input-block "
+                            style="border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;"><input
+                              type="text" required autocomplete="name" minlength="3" name="name" id="input_1495646567135"
+                              class="t-input js-tilda-rule " value="" placeholder="Ваше имя" data-tilda-rule="name"
+                              aria-describedby="error_1495646567135"
+                              style="color:#000000;background-color:#ffffff;border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;">
+                            <div class="t-input-error" aria-live="polite" id="error_1495646567135"></div>
+                          </div>
+                        </div>
+                        <div class="t-input-group t-input-group_ph " data-input-lid="1495646545048"
+                          data-field-type="ph">
+                          <div class="t-input-block "
+                            style="border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;"><input
+                              type="tel" required autocomplete="tel" minlength="5" name="phone" id="input_1495646545048"
+                              class="t-input js-tilda-rule " value="" placeholder="Ваш телефон" data-tilda-req="1"
+                              aria-required="true" data-tilda-rule="phone" pattern="[0-9]*"
+                              aria-describedby="error_1495646545048"
+                              style="color:#000000;background-color:#ffffff;border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;">
+                            <div class="t-input-error" aria-live="polite" id="error_1495646545048"></div>
+                          </div>
+                        </div>
+                        <div class="t-input-group t-input-group_cb " data-input-lid="1703248781684"
+                          data-field-type="cb">
+                          <div class="t-input-block "
+                            style="border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;"><label
+                              class="t-checkbox__control t-text t-text_xs"><input type="checkbox" name="Checkbox"
+                                value="yes" class="t-checkbox js-tilda-rule" checked>
+                              <div class="t-checkbox__indicator"></div>Я принимаю <a
+                                target="_blank" href="policy.html">пользовательское соглашение</a> и даю согласие на обработку
+                              персональной информации на условиях <a target="_blank" href="policy.html">политики
+                                конфиденциальности.</a>
+                            </label>
+                            <div class="t-input-error" aria-live="polite" id="error_1703248781684"></div>
+                          </div>
+                        </div>
+                        <div class="t-input-group t-input-group_cb " data-input-lid="1703248822025"
+                          data-field-type="cb">
+                          <div class="t-input-block "
+                            style="border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;"><label
+                              class="t-checkbox__control t-text t-text_xs"><input type="checkbox" name="Checkbox_2"
+                                value="yes" class="t-checkbox js-tilda-rule" checked>
+                              <div class="t-checkbox__indicator"></div>Я хочу получать информационные рассылки
+                              рекламного характера о событиях, акциях и специальных предложениях от агентства
+                              недвижимости.<br />
+                            </label>
+                            <div class="t-input-error" aria-live="polite" id="error_1703248822025"></div>
+                          </div>
+                        </div>
+                        <div class="t-form__errorbox-middle"><!--noindex-->
+                          <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;" data-nosnippet
+                            tabindex="-1" aria-label="Ошибки при заполнении формы">
+                            <ul role="list" class="t-form__errorbox-text t-text t-text_md">
+                              <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li>
+                              <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li>
+                              <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li>
+                              <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li>
+                              <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li>
+                              <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li>
+                              <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li>
+                            </ul>
+                          </div><!--/noindex-->
+                        </div>
+                        <div class="t-form__submit"><button type="submit" class="t-submit"
+                            style="color:#ffffff;background-color:#24960e;border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px;"
+                            data-field="buttontitle" data-buttonfieldset="button">Отправить </button></div>
+                      </div>
+                      <div class="t-form__errorbox-bottom"><!--noindex-->
+                        <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;" data-nosnippet
+                          tabindex="-1" aria-label="Ошибки при заполнении формы">
+                          <ul role="list" class="t-form__errorbox-text t-text t-text_md">
+                            <li class="t-form__errorbox-item js-rule-error js-rule-error-all"></li>
+                            <li class="t-form__errorbox-item js-rule-error js-rule-error-req"></li>
+                            <li class="t-form__errorbox-item js-rule-error js-rule-error-email"></li>
+                            <li class="t-form__errorbox-item js-rule-error js-rule-error-name"></li>
+                            <li class="t-form__errorbox-item js-rule-error js-rule-error-phone"></li>
+                            <li class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></li>
+                            <li class="t-form__errorbox-item js-rule-error js-rule-error-string"></li>
+                          </ul>
+                        </div><!--/noindex-->
+                      </div>
+                    </form>
                     <style>
                       #rec682956190 input::-webkit-input-placeholder {
                         color: #000000;
@@ -1674,7 +1557,41 @@
           </div>
         </div>
       </div>
-
+      <script>if (typeof jQuery !== 'undefined') {
+          $('#rec682956190').find('.js-form-proccess').on('tildaform:aftererror', function (e) {
+            e.preventDefault();
+            t_onFuncLoad('t698_fixcontentheight', function () { t698_fixcontentheight('682956190'); });
+          });
+          $('.t698').bind('displayChanged', function () {
+            t_onFuncLoad('t698_fixcontentheight', function () { t698_fixcontentheight('682956190'); });
+          });
+        } else {
+          var formBlock = document.querySelector('#rec682956190 .js-form-proccess');
+          if (formBlock) {
+            formBlock.addEventListener('tildaform:aftererror', function (e) {
+              e.preventDefault();
+              t_onFuncLoad('t698_fixcontentheight', function () { t698_fixcontentheight('682956190'); });
+            });
+          }
+          var wrapperBlock = document.querySelector('#rec682956190 .t698');
+          if (wrapperBlock) {
+            wrapperBlock.addEventListener('displayChanged', function () {
+              t_onFuncLoad('t698_fixcontentheight', function () { t698_fixcontentheight('682956190'); });
+            });
+          }
+        }
+        window.addEventListener('load', function () {
+          setTimeout(function () {
+            t_onFuncLoad('t_cover__setRecalculatedHeight', function () {
+              var rec = document.getElementById('rec682956190');
+              if (rec) {
+                var content = rec.querySelector('div[data-hook-content]');
+                var contentHeight = content ? t_cover__getPureHeight(content) : 0;
+                t_cover__setRecalculatedHeight(rec, contentHeight);
+              }
+            });
+          }, 500);
+        });</script>
     </div>
     <div id="rec682956192" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; "
       data-record-type="862"><!-- t862 -->
@@ -2460,7 +2377,17 @@
           </div>
         </div>
       </div>
-   
+      <script>t_onReady(function () {
+          var rec = document.querySelector('#rec' + 682956193);
+          if (!rec) return;
+          var inputGroupStep = rec.querySelector('.t-input-group_st');
+          if (inputGroupStep && inputGroupStep.parentNode) {
+            inputGroupStep.parentNode.removeChild(inputGroupStep);
+          }
+          t_onFuncLoad('t862_init', function () {
+            t862_init('682956193');
+          });
+        });</script>
       <style>
         #rec682956193 .t-input__vis-ph {
           color: #4b4b4b;
@@ -2673,7 +2600,21 @@
     </div>
 
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
 
+      const urlParams = new URLSearchParams(window.location.search);
+
+      const sub1 = urlParams.get("sub1");
+      const keyword = urlParams.get("keyword");
+      const gclid = urlParams.get("gclid");
+
+      document.getElementById("sub1").value = sub1 || "";
+      document.getElementById("keyword").value = keyword || "";
+      document.getElementById("gclid").value = gclid || "";
+
+    });
+  </script>
 </body>
 
 </html>
